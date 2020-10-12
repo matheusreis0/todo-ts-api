@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "mongoadmin",
+        "MONGO_PASSWORD": "secret",
+        "MONGO_DB": "mongo-db"
+    }
+}
