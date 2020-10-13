@@ -49,7 +49,7 @@ const updateTodo = async (req: Request, res: Response): Promise<void> => {
             todos: allTodos,
         })
     } catch (error) {
-        throw error
+        res.json(error)
     }
 }
 
@@ -65,7 +65,7 @@ const deleteTodo = async (req: Request, res: Response): Promise<void> => {
             todos: allTodos
         })
     } catch (error) {
-        throw error
+        res.json(error)
     }
 }
 
