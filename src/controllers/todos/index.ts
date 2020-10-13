@@ -28,7 +28,7 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
             .status(201)
             .json({ message: "Todo added", todo: newTodo, todos: allTodos })
     } catch (error) {
-        throw error
+        res.json(error)
     }
 }
 
